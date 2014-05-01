@@ -1,0 +1,35 @@
+{
+	"id": "nodebb-plugin-charts",
+	"name": "NodeBB Charts Plugin",
+	"description": "NodeBB Plugin that allows users to embed charts in their posts.",
+	"url": "https://github.com/svandecappelle/nodebb-plugin-charts",
+	"library": "./library.js",
+	"hooks": [
+		{ "hook": "filter:post.parse", "method": "parse", "callbacked": true, "priority": 6 }	
+	],
+	"staticDirs": ["./static"],
+	"css": [
+		"style.css"
+	],
+	"scripts": [
+		"./static/jqplot/core/jqplot.core.js",
+		"./static/jqplot/core/jqplot.core.js",
+		"./static/jqplot/core/jqplot.linearTickGenerator.js",
+		"./static/jqplot/core/jqplot.linearAxisRenderer.js",
+		"./static/jqplot/core/jqplot.axisTickRenderer.js", 
+		"./static/jqplot/core/jqplot.axisLabelRenderer.js",
+		"./static/jqplot/core/jqplot.tableLegendRenderer.js",
+		"./static/jqplot/core/jqplot.lineRenderer.js",
+		"./static/jqplot/core/jqplot.markerRenderer.js",
+		"./static/jqplot/core/jqplot.divTitleRenderer.js",
+		"./static/jqplot/core/jqplot.canvasGridRenderer.js", 
+		"./static/jqplot/core/jqplot.linePattern.js",
+		"./static/jqplot/core/jqplot.shadowRenderer.js",
+		"./static/jqplot/core/jqplot.shapeRenderer.js",
+		"./static/jqplot/core/jqplot.sprintf.js",
+		"./static/jqplot/core/jsdate.js",
+		"./static/jqplot/core/jqplot.themeEngine.js",
+		"./static/jqplot/core/jqplot.toImage.js",
+		"./static/jqplot/core/jqplot.effects.core.js", 
+		"./static/jqplot/core/jqplot.effects.blind.js"]
+}
