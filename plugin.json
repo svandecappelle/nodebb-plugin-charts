@@ -13,7 +13,6 @@
 	],
 	"scripts": [
 		"./static/jqplot/core/jqplot.core.js",
-		"./static/jqplot/core/jqplot.core.js",
 		"./static/jqplot/core/jqplot.linearTickGenerator.js",
 		"./static/jqplot/core/jqplot.linearAxisRenderer.js",
 		"./static/jqplot/core/jqplot.axisTickRenderer.js", 

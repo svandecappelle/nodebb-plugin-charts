@@ -1,15 +1,16 @@
 (function(module) {
 	"use strict";
 	var Charts = {};
+	var uuid = require('node-uuid');
 
 	Charts.parse = function(postContent, callback) {
 		var	regularPattern = /@@chart\[(.+)\]\[(.+)\]/g;
 
-		console.log(postContent);
-
 		if (postContent.match(regularPattern)){
-			postContent = postContent.replace("&quot;", "\'");
-			postContent = postContent.replace(regularPattern, '<div id="chart1"></div> <script type="text/javascript">$.jqplot("chart1", [$1], $2);</script>');
+			var idChart = uuid.v1();		
+			postContent = postContent.replace("(", "\'");
+			postContent = postContent.replace(")", "\'");
+			postContent = postContent.replace(regularPattern, '<div id="' + idChart + '"></div> <script type="text/javascript">$.jqplot("' + idChart + '", [$1], $2);</script>');
 		}
 		callback(null, postContent);
 	};
