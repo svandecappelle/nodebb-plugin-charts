@@ -39,7 +39,7 @@
 				// issue on JSON.stringify for keys's objects in 'String' type;
 				var untypedOptions = options;
 				//untypedOptions = JSON.stringify(untypedOptions).substring(9, untypedOptions.length - 1);
-				var replacement = '<div id="' + idChart + '"></div> <script type="text/javascript">$.jqplot("' + idChart + '", '+JSON.stringify(typedDatas)+', '+untypedOptions+');</script>';
+				var replacement = '<div id="' + idChart + '"></div> <script type="text/javascript">$.jqplot("' + idChart + '", '+datas+', '+untypedOptions+');</script>';
 				postContent = postContent.replace(regularPattern, replacement);
 			}catch (invalidDataException){
 				console.log("Invalid data exception ", invalidDataException);

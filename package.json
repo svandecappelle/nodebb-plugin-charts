@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-charts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "NodeBB Charts Plugin",
   "main": "library.js",
   "scripts": {
@@ -34,9 +34,9 @@
   },
   "dependencies": {
     "node-uuid": ">=1.4.1"
-  }, 
+  },
   "readme": "# NodeBB charts\n\nThis NodeBB plugin is a parser that allows users to write posts using [charts of Jqplot].\n\nTo customise options for the parser, please consult the \"help page\" page in the administration panel, under the \"Plugins\" heading.\n\n## Installation\n\n    npm install nodebb-plugin-charts",
   "_resolved": "git://github.com/svandecappelle/nodebb-plugin-charts/#4eb68613905f6ddd1efc1a73a381e429681b7cc2",
   "_from": "git://github.com/svandecappelle/nodebb-plugin-charts/",
-  "_id": "nodebb-plugin-charts@0.0.1"
+  "_id": "nodebb-plugin-charts@0.0.2"
 }
