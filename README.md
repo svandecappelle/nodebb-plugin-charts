@@ -22,7 +22,7 @@ The full list of options are here:
 Exemples' page of jQplot official website: http://www.jqplot.com/deploy/dist/examples/ 
 
 
-## Exemple:
+## Exemples:
 
 ```
 @chart[data:[[4, -3, 3, 6, 2, -2]]]{options: {
@@ -40,3 +40,19 @@ Exemples' page of jQplot official website: http://www.jqplot.com/deploy/dist/exa
 
 On screen: 
 ![Screeshot_area_chart](https://i.imgur.com/JhtbtuE.png)
+
+
+```
+@chart[data:[[['a',6], ['b',8], ['c',14], ['d',20]],[['a', 8], ['b', 12], ['c', 6], ['d', 9]]]]{options: {
+    seriesDefaults: {
+      renderer:$.jqplot.DonutRenderer,
+      rendererOptions:{
+        sliceMargin: 3,
+        startAngle: -90,
+        showDataLabels: true,
+        dataLabels: 'value'
+      }
+    }
+```
+On screen: 
+![Screeshot_donut_chart](https://i.imgur.com/rpmFz9X.png)
