@@ -39,3 +39,4 @@ Exemples' page of jQplot official website: http://www.jqplot.com/deploy/dist/exa
 ```
 
 On screen: 
+![Screeshot_area_chart](https://i.imgur.com/JhtbtuE.png)
